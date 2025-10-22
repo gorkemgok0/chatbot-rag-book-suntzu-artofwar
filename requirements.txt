@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+langchain
+openai
+sentence-transformers
+chromadb
+faiss-cpu
+transformers
+datasets
+streamlit
+python-multipart
+requests
+python-dotenv
+google-generativeai
