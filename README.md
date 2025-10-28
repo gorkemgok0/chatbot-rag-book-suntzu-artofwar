@@ -144,6 +144,10 @@ python src/rag_pipeline.py
 
 ## 🚀 Deployment
 
+### 🌐 Canlı Demo
+**Proje şu anda canlı olarak çalışmaktadır:**
+👉 **[https://chatbot-rag-book-suntzu-artofwar-5fnyzl92otgcuxe3uytqkr.streamlit.app/](https://chatbot-rag-book-suntzu-artofwar-5fnyzl92otgcuxe3uytqkr.streamlit.app/)**
+
 ### Streamlit Cloud (Önerilen)
 1. GitHub repository'nizi Streamlit Cloud'a bağlayın
 2. Environment variables'da `GOOGLE_API_KEY` ekleyin
