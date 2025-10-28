@@ -148,6 +148,46 @@ python src/rag_pipeline.py
 **Proje şu anda canlı olarak çalışmaktadır:**
 👉 **[https://chatbot-rag-book-suntzu-artofwar-5fnyzl92otgcuxe3uytqkr.streamlit.app/](https://chatbot-rag-book-suntzu-artofwar-5fnyzl92otgcuxe3uytqkr.streamlit.app/)**
 
+#### 📱 Uygulama Kullanım Kılavuzu
+
+**1. Arayüze Erişim:**
+- Yukarıdaki linke tıklayarak uygulamaya erişin
+- Sayfa yüklendiğinde "ChromaDB koleksiyonu bulunamadı, yeniden oluşturuluyor..." mesajını göreceksiniz
+- Bu normal bir durumdur - ilk kullanımda embedding'ler oluşturulur (2-3 dakika sürebilir)
+
+**2. Soru Sorma:**
+- Ana sayfada "Soru Sor" bölümünde metin kutusu bulunur
+- Sun Tzu'nun Savaş Sanatı ile ilgili sorularınızı Türkçe olarak yazın
+- Enter tuşuna basın veya "Gönder" butonuna tıklayın
+
+**3. Önerilen Test Soruları:**
+```
+• "Savaşta strateji nasıl belirlenir?"
+• "Düşmanla ne zaman savaşmamak gerekir?"
+• "Ordunun moralini nasıl yükseltirsin?"
+• "Liderlik nasıl olmalıdır?"
+• "Kaynakları nasıl yönetirsin?"
+• "Zaferin temel unsurları nelerdir?"
+```
+
+**4. Yanıt Özellikleri:**
+- ✅ **Kaynaklı Cevap**: Her yanıt Sun Tzu'nun metinlerine dayanır
+- ✅ **Kısa ve Net**: Anlaşılır Türkçe açıklamalar
+- ✅ **Şeffaflık**: "Kullanılan Bağlam" bölümünde kaynak metinleri görüntüleyebilirsiniz
+- ✅ **Hızlı Yanıt**: Cache'lenmiş sistem sayesinde anında cevap
+
+**5. Arayüz Özellikleri:**
+- **Sidebar**: Model bilgileri ve sistem durumu
+- **Ana Alan**: Soru-cevap etkileşimi
+- **Genişletilebilir Bölüm**: Kaynak metinleri görüntüleme
+- **Responsive Tasarım**: Mobil ve masaüstü uyumlu
+
+**6. Teknik Özellikler:**
+- **RAG Mimarisi**: Retrieval + Generation
+- **Vector Search**: ChromaDB ile anlamsal arama
+- **AI Model**: Google Gemini 1.5 Flash
+- **Embedding**: Multilingual sentence transformers
+
 ### Streamlit Cloud (Önerilen)
 1. GitHub repository'nizi Streamlit Cloud'a bağlayın
 2. Environment variables'da `GOOGLE_API_KEY` ekleyin
