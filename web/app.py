@@ -71,8 +71,22 @@ def load_rag_components():
         
         # Embedding'i yeniden oluştur
         try:
-            with open("sun_tzu.txt", "r", encoding="utf-8") as f:
-                texts = [t.strip() for t in f.readlines() if t.strip() and len(t.strip()) > 10]
+            # Farklı dosya yollarını dene
+            file_paths = ["sun_tzu.txt", "data/sun_tzu.txt", "./sun_tzu.txt", "./data/sun_tzu.txt"]
+            texts = []
+            
+            for file_path in file_paths:
+                try:
+                    with open(file_path, "r", encoding="utf-8") as f:
+                        texts = [t.strip() for t in f.readlines() if t.strip() and len(t.strip()) > 10]
+                        st.success(f"Dosya bulundu: {file_path}")
+                        break
+                except FileNotFoundError:
+                    continue
+            
+            if not texts:
+                st.error("sun_tzu.txt dosyası bulunamadı! Lütfen dosyayı root dizinine ekleyin.")
+                return None, None, None, None
             
             collection = chroma_client.create_collection(name="sun_tzu_collection")
             
